@@ -24,6 +24,11 @@ namespace SqlMonitor.Web
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include("~/Scripts/angular.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/select2").Include("~/Scripts/select2.js"));
+            bundles.Add(new StyleBundle("~/Content/select2").Include("~/Content/select2-bootstrap.css"));
+
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = true;
